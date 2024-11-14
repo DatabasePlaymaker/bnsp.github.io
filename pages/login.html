@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body class="font-inter bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div id="particles-js"></div>
+    <!-- Particles.js container -->
+    <div class="contain py-40 flex h-screen">
+      <div class="w-full max-w-xs m-auto bg-indigo-100 rounded-lg p-5">
+        <header>
+          <img
+            class="w-20 mx-auto mb-5"
+            src="https://img.icons8.com/?size=100&id=U5AcCk9kUWMk&format=png&color=000000"
+          />
+        </header>
+        <form>
+          <div>
+            <label class="block mb-2 text-blue-500" for="username"
+              >Username</label
+            >
+            <input
+              class="w-full p-2 mb-2 text-black border border-gray-300 rounded focus:ring-0 focus:border-blue-300"
+              type="text"
+              id="username"
+              placeholder="Username"
+            />
+          </div>
+          <div>
+            <label class="block mb-2 text-blue-500" for="password"
+              >Password</label
+            >
+            <input
+              class="w-full p-2 mb-6 text-black border border-gray-300 rounded focus:ring-0 focus:border-blue-300"
+              type="password"
+              id="password"
+              placeholder="***********"
+            />
+          </div>
+          <div>
+            <button
+              type="button"
+              id="login"
+              class="block w-full py-2 text-center text-white bg-blue-500 border border-blue-500 rounded hover:bg-transparent hover:text-blue-500 transition uppercase font-roboto font-medium"
+            >
+              Login
+            </button>
+            <div class="flex gap-2 pt-5">
+              <p class="text-gray-500 text-sm">Belum memiliki akun?</p>
+              <a class="text-blue-500 text-sm underline" href="register.html"
+                >Register</a
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Menghubungkan file konfigurasi -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="../javascript/particles-config.js"></script>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
