@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
-    <title>Login</title>
+    <title>Register</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body class="font-inter bg-gradient-to-r from-cyan-500 to-blue-500">
@@ -18,9 +18,9 @@
             src="https://img.icons8.com/?size=100&id=GCsCDZiHTP0d&format=png&color=3b82f6"
           />
         </header>
-        <form>
-          <div>
-            <label class="block mb-2 text-blue-500" for="email">Email</label>
+        <form method="post" action="">
+          <div class="input-group">
+            <label for="email" class="block mb-2 text-blue-500">Email</label>
             <input
               class="w-full p-2 mb-2 text-black border border-gray-300 rounded focus:ring-0 focus:border-blue-300"
               type="email"
@@ -29,8 +29,8 @@
               required
             />
           </div>
-          <div>
-            <label class="block mb-2 text-blue-500" for="username"
+          <div class="input-group">
+            <label for="username" class="block mb-2 text-blue-500"
               >Username</label
             >
             <input
@@ -40,8 +40,8 @@
               placeholder="Username"
             />
           </div>
-          <div>
-            <label class="block mb-2 text-blue-500" for="password"
+          <div class="input-group">
+            <label for="password" class="block mb-2 text-blue-500"
               >Password</label
             >
             <input
