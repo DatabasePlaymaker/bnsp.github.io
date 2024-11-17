@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = ''; // Kosongkan jika menggunakan default
-$dbname = 'register';
+$dbname = 'autentikasi';
 
 // Koneksi ke database
 $conn = new mysqli($host, $user, $password, $dbname);
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($stmt->execute()) {
         echo "<script>
                 alert('Registrasi berhasil!');
-                window.location.href = 'login.html';
+                window.location.href = '../frontend/login.html';
               </script>";
     } else {
         echo "Error: " . $stmt->error;
